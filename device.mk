@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
     OPlusPenResTarget \
     OPlusSettingsProviderResTarget_CN \
     OPlusSettingsProviderResTarget_ROW \
-    OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
 # Power
