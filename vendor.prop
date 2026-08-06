@@ -1,5 +1,7 @@
 # Display
 debug.sf.ignore_hwc_physical_display_orientation=true
-persist.sys.sf.color_mode=9
 ro.bootanim.set_orientation_4630946983774026899=ORIENTATION_90
 ro.surface_flinger.primary_display_orientation=ORIENTATION_270
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=300
+ro.surface_flinger.set_touch_timer_ms=350
