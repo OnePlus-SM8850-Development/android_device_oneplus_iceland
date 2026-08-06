@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+USE_PREBUILT_KERNEL ?= true
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 14612955136
 
@@ -18,7 +20,11 @@ TARGET_OTA_ASSERT_DEVICE := OP6547L1,OP657AL1
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
+ifeq ($(USE_PREBUILT_KERNEL), true)
+include device/oneplus/iceland-kernel/BoardConfig.mk
+else
 TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_ICELAND_DTB=y OPLUS_WIFI_ONLY=true
+endif
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
