@@ -9,5 +9,5 @@
              android:isStatic="true"
              android:priority="350"
              android:requiredSystemPropertyName="ro.boot.prjname"
-             android:requiredSystemPropertyValue="24976" />
+             android:requiredSystemPropertyValue="25978" />
 </manifest>

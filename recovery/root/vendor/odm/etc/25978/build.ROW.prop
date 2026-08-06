@@ -1,0 +1,4 @@
+# Device info
+ro.product.odm.model=OPD2514
+ro.product.odm.name=OPD2514
+ro.vendor.oplus.regionmark=ROW

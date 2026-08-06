@@ -1,1 +1,1 @@
-require board=sun|OP615EL1|OP6190L1
+require board=canoe|OP6547L1|OP657AL1

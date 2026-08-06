@@ -4,21 +4,21 @@
 #
 
 # Partitions
-BOARD_SUPER_PARTITION_SIZE := 11711471616
+BOARD_SUPER_PARTITION_SIZE := 14612955136
 
 # Include the common OEM chipset BoardConfig.
-include device/oneplus/sm8750-common/BoardConfigCommon.mk
+include device/oneplus/sm8850-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/erhai
+DEVICE_PATH := device/oneplus/iceland
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP615EL1,OP6190L1
+TARGET_OTA_ASSERT_DEVICE := OP6547L1,OP657AL1
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_ERHAI_DTB=y OPLUS_WIFI_ONLY=true
+TARGET_KERNEL_ADDITIONAL_FLAGS += CONFIG_ICELAND_DTB=y OPLUS_WIFI_ONLY=true
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
@@ -31,4 +31,4 @@ TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION := ROTATION_RIGHT
 include $(DEVICE_PATH)/sepolicy/SEPolicy.mk
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/erhai/BoardConfigVendor.mk
+include vendor/oneplus/iceland/BoardConfigVendor.mk

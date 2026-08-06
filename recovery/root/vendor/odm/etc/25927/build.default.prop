@@ -1,0 +1,11 @@
+# Bluetooth
+bluetooth.device.default_name=OnePlus Pad 3 Pro
+
+# Device info
+ro.product.odm.device=OP6547L1
+ro.product.odm.model=OPD2513
+ro.product.odm.name=OPD2513
+ro.vendor.oplus.regionmark=CN
+
+# USB
+vendor.usb.product_string=OnePlus Pad 3 Pro

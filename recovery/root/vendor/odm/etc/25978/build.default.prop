@@ -1,7 +1,7 @@
 import /odm/etc/${ro.boot.prjname}/build.${ro.boot.hardware.revision}.prop
 
 # Bluetooth
-bluetooth.device.default_name=OnePlus Pad 3
+bluetooth.device.default_name=OnePlus Pad 4
 
 # USB
-vendor.usb.product_string=OnePlus Pad 3
+vendor.usb.product_string=OnePlus Pad 4

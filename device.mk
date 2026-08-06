@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.erhai.rc
+    init.iceland.rc
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -58,12 +58,12 @@ $(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchpanel/double_tap_en
 
 # Regional properties
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24926/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24926/build.default.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24976/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/24976/build.EU.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24976/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/24976/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24976/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/24976/build.NA.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24976/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/24976/build.ROW.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/24976/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/24976/build.default.prop
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/25927/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/25927/build.default.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/25978/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/25978/build.EU.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/25978/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/25978/build.IN.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/25978/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/25978/build.NA.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/25978/build.ROW.prop:$(TARGET_COPY_OUT_ODM)/etc/25978/build.ROW.prop \
+    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/25978/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/25978/build.default.prop
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -74,7 +74,7 @@ PRODUCT_PACKAGES += \
     OplusPen
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/oneplus/sm8750-common/common.mk)
+$(call inherit-product, device/oneplus/sm8850-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/erhai/erhai-vendor.mk)
+$(call inherit-product, vendor/oneplus/iceland/iceland-vendor.mk)

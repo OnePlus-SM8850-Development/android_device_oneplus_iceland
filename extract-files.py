@@ -18,8 +18,8 @@ from extract_utils.main import (
 
 namespace_imports = [
     'hardware/oplus',
-    'hardware/qcom-caf/sm8750',
-    'vendor/oneplus/sm8750-common',
+    'hardware/qcom-caf/sm8850',
+    'vendor/oneplus/sm8850-common',
     'vendor/qcom/opensource/commonsys-intf/display',
 ]
 
@@ -69,7 +69,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'erhai',
+    'iceland',
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
@@ -79,6 +79,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm8750-common', module.vendor
+        module, 'sm8850-common', module.vendor
     )
     utils.run()

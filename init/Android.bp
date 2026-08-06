@@ -4,8 +4,8 @@
 //
 
 prebuilt_etc {
-    name: "init.erhai.rc",
-    src: "init.erhai.rc",
+    name: "init.iceland.rc",
+    src: "init.iceland.rc",
     sub_dir: "init",
     device_specific: true,
 }
