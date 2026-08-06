@@ -35,14 +35,14 @@
 
        Each display suffix number should match it's ordinal in its display device config.
   -->
-  <item name="ambient.on.display0">567.44</item>  <!-- ~100mA -->
+  <item name="ambient.on.display0">23.12</item>  <!-- ~23.12mA -->
   <!-- Average battery current draw of display0 while on without backlight.
        There must be one of these for each display, labeled:
        screen.on.display0, screen.on.display1, etc...
 
        Each display suffix number should match it's ordinal in its display device config.
   -->
-  <item name="screen.on.display0">251.62</item>  <!-- ~100mA -->
+  <item name="screen.on.display0">100.08</item>  <!-- ~100.08mA -->
   <!-- Average battery current draw of the backlight at full brightness.
        The full current draw of display N at full brightness should be the sum of screen.on.displayN
        and screen.full.displayN
@@ -52,7 +52,7 @@
 
        Each display suffix number should match it's ordinal in its display device config.
   -->
-  <item name="screen.full.display0">1804.17</item>  <!-- ~100mA -->
+  <item name="screen.full.display0">202.46</item>  <!-- ~202.46mA -->
 
   <item name="bluetooth.active">46</item> <!-- Bluetooth data transfer, ~10mA -->
   <item name="bluetooth.on">1.7</item>  <!-- Bluetooth on & connectable, but not connected, ~0.1mA -->
@@ -107,84 +107,134 @@
        cpu.speeds.cluster0, cpu.speeds.cluster1, etc... -->
     <array name="cpu.core_speeds.cluster0">
         <value>384000</value>
-        <value>556800</value>
-        <value>748800</value>
-        <value>960000</value>
-        <value>1152000</value>
-        <value>1363200</value>
+        <value>537600</value>
+        <value>691200</value>
+        <value>787200</value>
+        <value>883200</value>
+        <value>998400</value>
+        <value>1113600</value>
+        <value>1228800</value>
+        <value>1324800</value>
+        <value>1440000</value>
         <value>1555200</value>
+        <value>1670400</value>
         <value>1785600</value>
+        <value>1900800</value>
         <value>1996800</value>
+        <value>2112000</value>
         <value>2227200</value>
-        <value>2400000</value>
+        <value>2361600</value>
+        <value>2496000</value>
+        <value>2611200</value>
         <value>2745600</value>
-        <value>2918400</value>
-        <value>3072000</value>
-        <value>3321600</value>
-        <value>3532800</value>
+        <value>2899200</value>
+        <value>3033600</value>
+        <value>3187200</value>
+        <value>3302400</value>
+        <value>3398400</value>
+        <value>3513600</value>
+        <value>3628800</value>
     </array>
 
     <array name="cpu.core_speeds.cluster1">
-        <value>614400</value>
+        <value>768000</value>
+        <value>883200</value>
         <value>1017600</value>
-        <value>1401600</value>
-        <value>1689600</value>
-        <value>1958400</value>
-        <value>2246400</value>
+        <value>1132800</value>
+        <value>1267200</value>
+        <value>1382400</value>
+        <value>1497600</value>
+        <value>1632000</value>
+        <value>1747200</value>
+        <value>1862400</value>
+        <value>1977600</value>
+        <value>2112000</value>
+        <value>2227200</value>
         <value>2438400</value>
-        <value>2649600</value>
-        <value>2841600</value>
-        <value>3072000</value>
-        <value>3283200</value>
-        <value>3513600</value>
-        <value>3801600</value>
-        <value>4089600</value>
-        <value>4204800</value>
-        <value>4320000</value>
+        <value>2668800</value>
+        <value>2880000</value>
+        <value>3129600</value>
+        <value>3398400</value>
+        <value>3648000</value>
+        <value>3763200</value>
+        <value>3859200</value>
+        <value>3974400</value>
+        <value>4070400</value>
+        <value>4185600</value>
+        <value>4262400</value>
+        <value>4339200</value>
+        <value>4396800</value>
+        <value>4512000</value>
+        <value>4608000</value>
   </array>
 
   <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
        Like cpu.speeds.cluster0, there must be one of these present for
        each heterogeneous CPU cluster. -->
   <array name="cpu.core_power.cluster0">
-        <value>20.7</value>
-        <value>27.2</value>
-        <value>40.4</value>
-        <value>42.7</value>
-        <value>51.7</value>
-        <value>63.5</value>
-        <value>73.3</value>
-        <value>91.9</value>
-        <value>109.0</value>
+        <value>19.4</value>
+        <value>25.0</value>
+        <value>30.5</value>
+        <value>34.7</value>
+        <value>40.2</value>
+        <value>46.1</value>
+        <value>51.9</value>
+        <value>58.9</value>
+        <value>65.2</value>
+        <value>72.9</value>
+        <value>80.2</value>
+        <value>89.4</value>
+        <value>98.7</value>
+        <value>107.7</value>
+        <value>116.9</value>
         <value>128.1</value>
-        <value>156.7</value>
-        <value>215.3</value>
-        <value>268.2</value>
-        <value>328.3</value>
-        <value>387.6</value>
-        <value>455.2</value>
+        <value>139.3</value>
+        <value>154.6</value>
+        <value>172.3</value>
+        <value>188.0</value>
+        <value>208.3</value>
+        <value>235.0</value>
+        <value>268.4</value>
+        <value>298.9</value>
+        <value>332.5</value>
+        <value>392.5</value>
+        <value>428.4</value>
+        <value>460.6</value>
   </array>
 
   <!-- Current at each CPU speed for cluster 1, as per 'cpu.speeds.cluster1'.
        Like cpu.speeds.cluster1, there must be one of these present for
        each heterogeneous CPU cluster. -->
   <array name="cpu.core_power.cluster1">
-        <value>65.8</value>
-        <value>85.8</value>
-        <value>126.2</value>
-        <value>168.6</value>
-        <value>206.2</value>
-        <value>260.8</value>
-        <value>303.7</value>
-        <value>357.1</value>
-        <value>411.8</value>
-        <value>495.0</value>
-        <value>592.5</value>
-        <value>724.0</value>
-        <value>1017.7</value>
-        <value>1260.7</value>
-        <value>1365.0</value>
-        <value>1475.0</value>
+        <value>74.5</value>
+        <value>84.2</value>
+        <value>101.1</value>
+        <value>115.2</value>
+        <value>133.4</value>
+        <value>147.5</value>
+        <value>167.9</value>
+        <value>189.9</value>
+        <value>205.9</value>
+        <value>226.5</value>
+        <value>248.5</value>
+        <value>273.9</value>
+        <value>295.9</value>
+        <value>347.5</value>
+        <value>405.5</value>
+        <value>454.2</value>
+        <value>532.5</value>
+        <value>631.5</value>
+        <value>740.5</value>
+        <value>857.0</value>
+        <value>896.2</value>
+        <value>955.7</value>
+        <value>1046.7</value>
+        <value>1067.5</value>
+        <value>1197.3</value>
+        <value>1219.7</value>
+        <value>1313.4</value>
+        <value>1638.8</value>
+        <value>1717.3</value>
   </array>
 
 
@@ -200,7 +250,7 @@
   </array>
 
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
-  <item name="battery.capacity">12140</item>
+  <item name="battery.capacity">13380</item>
 
   <!-- Wifi related values. -->
   <!-- Idle Receive current for wifi radio in mA. 0 by default-->
