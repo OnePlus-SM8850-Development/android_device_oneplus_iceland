@@ -78,6 +78,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+    'odm/lib64/libocam_hmbird.so': blob_fixup()
+        .replace_needed('libosensenativeproxy_client.so', 'libosensenativeproxy_client_iceland.so'),
     (
         'vendor/lib64/camera/components/com.qti.node.fd.so',
         'vendor/lib64/hw/camera.qcom.core.so',

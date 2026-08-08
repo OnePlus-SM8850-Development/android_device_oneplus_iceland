@@ -1696,6 +1696,9 @@ odm/bin/nvram_server
 odm/etc/init/init.nvram.rc
 odm/lib64/libnvram.so
 
+# OSENSE
+odm/lib64/libosensenativeproxy_client.so:odm/lib64/libosensenativeproxy_client_iceland.so;FIX_SONAME
+
 # Pogo pin keyboard
 odm/bin/hw/vendor.oplus.hardware.pogo_keyboard-service
 odm/etc/init/vendor.oplus.hardware.pogo_keyboard-service.rc
