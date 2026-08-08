@@ -43,6 +43,8 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'vendor.oplus.caihong.serialno', b'ro.boot.chipid' + 15 * b'\x00'),
     'odm/etc/init/init.camera_process.rc': blob_fixup()
         .regex_replace('    delete_recursion', '    #delete_recursion'),
+    'odm/firmware/fastchg/25927/charging_hyper_mode_config.txt': blob_fixup()
+        .regex_replace(r"(PROJECT:=)25978", r"\g<1>25927"),
     (
         'odm/lib64/libAlgoProcess.so',
         'odm/lib64/libEIS.so',

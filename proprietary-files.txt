@@ -1516,6 +1516,7 @@ vendor/firmware/CAMERA_ICP_170.elf
 
 # Charger firmware
 odm/firmware/fastchg/25978/charging_hyper_mode_config.txt
+odm/firmware/fastchg/25978/charging_hyper_mode_config.txt:odm/firmware/fastchg/25927/charging_hyper_mode_config.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
 
 # Display configurations
@@ -1750,4 +1751,4 @@ odm/etc/wifi/peach/regdb.bin
 odm/etc/wifi/peach/regdb_version
 
 # Wireless pen firmware
-odm/firmware/wireless_pen/25978/mt5806_firmware.bin
+odm/firmware/wireless_pen/25978/mt5806_firmware.bin;SYMLINK=odm/firmware/wireless_pen/25927/mt5806_firmware.bin
